@@ -7,9 +7,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Melek | Acompañamos tu crecimiento espiritual</title>
 <link rel="shortcut icon" href="images/logo.png">
+
+<style>
+
+	 header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+     
+      z-index: 1000;
+    }
+</style>
 
 <!-- Custom Theme files -->
  <meta name="author" content="Melek" />
@@ -71,6 +83,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</script>
 </head>
 <body>
+	<header>
 	<div class="header">
 		<div class="container">
 			<div class="row">
@@ -137,10 +150,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		 </div>
 	    </div>
 	  </div>
+	</header>
      <div class="main">
       <div class="shop_top">
 		<div class="container">
 			<div class="row ex_box">
+				<br><br>
 				<h3 align="center" class="m_2">Historia del Arcángel Jofiel</h3>
 				<span class="img_section magnifier2"><a class="fancybox" href="images/Gabriel.jpg" data-fancybox-group="gallery" title="Arcángel Jofiel"><img src="images/jofiel.jpg" width="450" class="img-responsive" alt=""></a></span>
 				<div align="center" class="col-md-4 team1">
@@ -297,25 +312,7 @@ Se le considera un patrón de artistas y filósofos, inspirando belleza tanto en
 							  <li class="pinterest"><a href="#"><span> </span></a></li>	
 							  <li class="youtube"><a href="#"><span> </span></a></li>									  				
 						    </ul>
-							<p class="contador" style="color: white;"> Número de visitas: <span id="visit-count"> 0 </span></p>
-				 <script>
-    // Obtener el contador de visitas del almacenamiento local
-    let visitCount = localStorage.getItem('visitCount');
 
-    // Si no existe, inicializarlo en 0
-    if (!visitCount) {
-      visitCount = 0;
-    }
-
-    // Incrementar el contador
-    visitCount++;
-
-    // Guardar el nuevo valor en el almacenamiento local
-    localStorage.setItem('visitCount', visitCount);
-
-    // Mostrar el contador en la página
-    document.getElementById('visit-count').textContent = visitCount;
-  </script>
 		   				</ul>
 					</div>
 				</div>
@@ -340,4 +337,5 @@ Se le considera un patrón de artistas y filósofos, inspirando belleza tanto en
 			</div>
 		</div>
 </body>	
+
 </html>
