@@ -8,10 +8,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 <title>Melek | Acompañamos tu crecimiento espiritual</title>
 <link rel="shortcut icon" href="images/logo.png">
 
+<style>
+
+	 header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+     
+      z-index: 1000;
+    }
+</style>
+	
 <!-- Custom Theme files -->
  <meta name="author" content="Melek" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -73,6 +85,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
 	<div class="header">
+		<header>
 		<div class="container">
 			<div class="row">
 			  <div class="col-md-12">
@@ -138,10 +151,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		 </div>
 	    </div>
 	  </div>
+	</header>
      <div class="main">
       <div class="shop_top">
 		<div class="container">
 			<div class="row ex_box">
+				<br><br>
 				<h3 align="center" class="m_2">Ángeles de la Guarda</h3>
 				<span class="img_section magnifier2"><a class="fancybox" href="images/angel de la guarda.jpeg" data-fancybox-group="gallery" title="Ángel de la Guarda"><img src="images/angel de la guarda.jpeg" width="450" class="img-responsive" alt=""></a></span>
 				<div align="center" class="col-md-4 team1">
@@ -277,25 +292,7 @@ También ellos se sienten muy felices de poder ayudarnos en nuestras actividades
 							  <li class="pinterest"><a href="#"><span> </span></a></li>	
 							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
 						    </ul>
-							<p class="contador" style="color: white;"> Número de visitas: <span id="visit-count"> 0 </span></p>
-				 <script>
-    // Obtener el contador de visitas del almacenamiento local
-    let visitCount = localStorage.getItem('visitCount');
 
-    // Si no existe, inicializarlo en 0
-    if (!visitCount) {
-      visitCount = 0;
-    }
-
-    // Incrementar el contador
-    visitCount++;
-
-    // Guardar el nuevo valor en el almacenamiento local
-    localStorage.setItem('visitCount', visitCount);
-
-    // Mostrar el contador en la página
-    document.getElementById('visit-count').textContent = visitCount;
-  </script>
 		   				</ul>
 					</div>
 				</div>
@@ -320,4 +317,5 @@ También ellos se sienten muy felices de poder ayudarnos en nuestras actividades
 			</div>
 		</div>
 </body>	
+
 </html>
