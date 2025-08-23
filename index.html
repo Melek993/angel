@@ -357,25 +357,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							  <li class="pinterest"><a href="#"><span> </span></a></li>	
 							  <li class="youtube"><a href="#"><span> </span></a></li>														  				
 						    </ul>
-		   				   <!--<p class="contador" style="color: white;"> Número de visitas: <span id="visit-count"> 0 </span></p>
-				 <script>
-    // Obtener el contador de visitas del almacenamiento local
-    let visitCount = localStorage.getItem('visitCount');
+		   				    <p>Visitas: <span id="contador"></span></p>
 
-    // Si no existe, inicializarlo en 0
-    if (!visitCount) {
-      visitCount = 0;
-    }
+  								<script>
+    								// Obtener el contador del almacenamiento local
+    								let visitas = localStorage.getItem('visitas') || 0;
+    								visitas++;
+    								localStorage.setItem('visitas', visitas);
 
-    // Incrementar el contador
-    visitCount++;
-
-    // Guardar el nuevo valor en el almacenamiento local
-    localStorage.setItem('visitCount', visitCount);
-
-    // Mostrar el contador en la página
-    document.getElementById('visit-count').textContent = visitCount;
-  </script><!-->
+    								// Mostrar el contador en la página
+    								document.getElementById('contador').textContent = visitas;
+ 								</script>
 						</ul>
 					</div>
 				</div>
@@ -401,6 +393,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 </body>	
 </html>
+
 
 
 
