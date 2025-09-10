@@ -87,7 +87,7 @@
 	margin-bottom: 5%;
 }
 /* ------------------------------- 4. Media Query Max Width 1300, Min Width 720 ------------------------------- */
-/* ------------------------------- 5. Media Query Max Width 719 ------------------------------- 
+/* ------------------------------- 5. Media Query Max Width 719 ------------------------------- */
 
 @media only screen and (max-width:800px) {
 
@@ -110,6 +110,7 @@
 		margin-left: 19%;
 		font-size: 3em;
 	}
-}*/
+}
+
 
 
