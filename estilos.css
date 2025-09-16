@@ -1,0 +1,230 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* HEADER FIJO */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo{
+	float:left;
+	margin-right: 2%;
+}
+
+/* BOTÓN HAMBURGUESA */
+.toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  
+}
+
+/* MENÚ PRINCIPAL */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* SUBMENÚS */
+.has-submenu {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  z-index: 999;
+}
+
+.submenu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+/* CONTENEDOR PRINCIPAL 
+.container {
+  /*max-width: 1700px;
+  margin: 0 auto;
+  padding: 100px 20px 40px; /* Deja espacio arriba por el header fijo 
+}*/
+
+.content-bottom{
+	width:100%;
+	background: url(images/cielo.jpg)no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-size: 100% 100%;
+	height:100%;
+	
+	padding:15% 0;
+}
+
+.content_bottom-text h3{
+	color: #FFF;
+	font-size: 3em;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1.2em;
+	margin: 2% 0 10%;
+}
+
+p.m_1{
+	color: #000000;
+	font-size: 1.20em;
+	line-height: 2.2em;
+	margin-bottom:6%;
+}
+
+p.m_2{
+	color: #000000;
+	font-size: 1.20em;
+	line-height: 2.2em;
+}
+
+h3.m_3{
+	color: #000;
+	font-size: 3em;
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom:2%;
+}
+
+
+.nbs-flexisel-container {
+    position: relative;
+    max-width: 100%;
+}
+
+
+/* PIE DE PÁGINA 
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}*/
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 30px 0;
+}
+
+/* Cambiar el tamaño del grid */
+.grid-footer {
+  display: grid;
+  grid-template-columns: 3fr 2fr; /* Tamaños personalizados: columna del medio más grande */
+  gap: 20px; /* Espacio entre columnas */
+  max-width: 1200px;  /* Controla el ancho total del grid */
+  margin: 0 auto;     /* Centra el grid dentro del footer */
+  padding: 0 20px;    /* Espaciado interno (horizontal) */
+}
+
+.columna {
+  /* Puedes controlar también el tamaño interno del contenido */
+  padding: 10px;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+/* Imágenes, sombras, bordes */
+.contenedor-imagen {
+  display: inline-block;
+  background-color: #fff; /* Fondo claro para destacar el relieve */
+  border-radius: 16px; /* Bordes redondeados */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  overflow: hidden; /* Redondea también la imagen */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo de la imagen */
+.contenedor-imagen img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Efecto hover */
+.contenedor-imagen:hover {
+  transform: scale(1.03); /* Hace zoom sutil */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+}
+
+/* RESPONSIVE: MÓVILES */
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .submenu {
+    position: static;
+    background-color: #444;
+    padding-left: 1rem;
+  }
+
+  .has-submenu > a::after {
+    content: " ▼";
+    font-size: 0.8em;
+  }
+
+  .has-submenu.open > .submenu {
+    display: block;
+  }
+}
