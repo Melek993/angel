@@ -4,178 +4,148 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-	
-<title>Melek | Acompañamos tu crecimiento espiritual</title>
-<link rel="shortcut icon" href="images/logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- 🔑 Título SEO -->
+  <title>Angeloterapia y Conexión con Ángeles | Sanación Espiritual y Guía Divina</title>
 
-<style>
+  <!-- 📝 Meta Descripción -->
+  <meta name="description" content="Sesiones de angeloterapia, canalización de mensajes angelicales y sanación energética. Conecta con tus ángeles y transforma tu vida espiritual.">
 
-	 header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-     
-      z-index: 1000;
+  <!-- 🔍 Google indexación -->
+  <meta name="robots" content="index, follow">
+
+  <!-- 📱 Redes sociales: Open Graph para Facebook -->
+  <meta property="og:title" content="Angeloterapia y Conexión con Ángeles">
+  <meta property="og:description" content="Sanación espiritual, mensajes angelicales y guía energética. Descubre el poder de los ángeles en tu camino personal.">
+  <meta property="og:image" content="https://tusitio.com/imagen-angeloterapia.jpg">
+  <meta property="og:url" content="https://melek993.github.io/angel/index.html">
+  <meta property="og:type" content="website">
+
+  <!-- 🐦 Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Angeloterapia y Guía con Ángeles">
+  <meta name="twitter:description" content="Sesiones para conectar con tus ángeles, recibir guía divina y sanar tu alma. Reserva tu espacio.">
+  <meta name="twitter:image" content="https://tusitio.com/imagen-angeloterapia.jpg">
+
+
+  <!-- Custom Theme files -->
+  <meta name="author" content="Melek" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Sesiones de angeloterapia y conexión con ángeles para sanar, guiar y elevar tu energía. Encuentra paz, claridad y propósito espiritual. Reserva ahora.">
+
+  <meta name="keywords" content="Sesiones de angeloterapia y conexión con ángeles para sanar, guiar y elevar tu energía. Encuentra paz, claridad y propósito espiritual. Reserva ahora." />
+
+  <link rel="shortcut icon" href="images/logo.png">
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="css/bootstrap1.css" rel='stylesheet' type='text/css' />
+    <style>
+    * {
+      box-sizing: border-box;
     }
-</style>
 
-<!-- Custom Theme files -->
- <meta name="author" content="Melek" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="Angeloterápia, ángeles, arcángeles y guía espiritual" />
-<meta name="keywords" content="Angeloterápia, ángeles, arcángeles y guía espiritual" />
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<script src="js/jquery.min.js"></script>
-<script type="text/javascript">
-        $(document).ready(function() {
-            $(".dropdown img.flag").addClass("flagvisibility");
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
 
-            $(".dropdown dt a").click(function() {
-                $(".dropdown dd ul").toggle();
-            });
-                        
-            $(".dropdown dd ul li a").click(function() {
-                var text = $(this).html();
-                $(".dropdown dt a span").html(text);
-                $(".dropdown dd ul").hide();
-                $("#result").html("Selected value is: " + getSelectedValue("sample"));
-            });
-                        
-            function getSelectedValue(id) {
-                return $("#" + id).find("dt a span.value").html();
-            }
+    .grid-item {
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex; /* Aquí usamos Flexbox dentro de cada celda */
+      justify-content: center; /* Centrado horizontal */
+      align-items: center;     /* Centrado vertical */
+    }
 
-            $(document).bind('click', function(e) {
-                var $clicked = $(e.target);
-                if (! $clicked.parents().hasClass("dropdown"))
-                    $(".dropdown dd ul").hide();
-            });
+    .grid-item img,
+    .grid-item video {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      display: block;
+    }
 
+    .grid-item video {
+      max-height: 300px;
+    }
 
-            $("#flagSwitcher").click(function() {
-                $(".dropdown img.flag").toggleClass("flagvisibility");
-            });
-        });
-     </script>
-    <!-- light-box -->
-	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
-   <script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			 *  Simple image gallery. Uses default settings
-			 */
-
-			$('.fancybox').fancybox();
-
-		});
-	</script>
+    @media (max-width: 600px) {
+      .grid-item video {
+        max-height: 200px;
+      }
+    }
+  </style>
 </head>
 <body>
-	<header>
-	<div class="header">
-		<div class="container">
-			<div class="row">
-			  <div class="col-md-12">
-				 <div class="header-left">
-					 <div class="logo">
-						<a href="index.html"><img src="images/logo.png" alt=""/></a>
-					 </div>
-					 <div class="menu">
-						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
-						    <ul class="nav" id="nav">
-						    	<!--<li><a href="shop.html">Tienda</a></li>-->
-						    	<li class="current"><a href="experiance2.html">Ángeles</a></li>
-						    	<li><a href="experiance1.html">Arcángles</a></li>
-						    	<li><a href="experiance.html">Oraciones</a></li>
-						    	<li><a href="rituales.html">Rituales</a></li>
-								<li><a href="checkout.html">Sesiones</a></li>							
-								<div class="clear"></div>
-							</ul>
-							<script type="text/javascript" src="js/responsive-nav.js"></script>
-				    </div>							
-	    		    <div class="clear"></div>
-	    	    </div>
-	            <div class="header_right">
-	    		  <!-- start search-->
-				   <div class="search-box">
-							<div id="sb-search" class="sb-search">
-								<form>
-									<!--<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">-->
-									<input class="sb-search-submit" type="submit" value="">
-									<a href="index.html"><span class="sb-icon-search"> </span></a>
-								</form>
-							</div>
-						</div>
-						<!----search-scripts---->
-						<script src="js/classie.js"></script>
-						<script src="js/uisearch.js"></script>
-						<script>
-							new UISearch( document.getElementById( 'sb-search' ) );
-						</script>
-				   <!--<ul class="icon1 sub-icon1 profile_img">
-					 <li><a class="active-icon c1" href="#"> </a>
-						<ul class="sub-icon1 list">
-						  <div class="product_control_buttons">
-						  	<a href="#"><img src="images/edit.png" alt=""/></a>
-						  		<a href="#"><img src="images/close_edit.png" alt=""/></a>
-						  </div>
-						   <div class="clear"></div>
-						  <li class="list_img"><img src="images/1.jpg" alt=""/></li>
-						  <li class="list_desc"><h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
-                          $12.00</span></li>
-						  <div class="login_buttons">
-							 <div class="check_button"><a href="checkout.html">Check out</a></div>
-							 <div class="login_button"><a href="login.html">Login</a></div>
-							 <div class="clear"></div>
-						  </div>
-						  <div class="clear"></div>
-						</ul>
-					 </li>
-				   </ul>-->
-		        <div class="clear"></div>
-	       </div>
-	      </div>
-		 </div>
-	    </div>
-	  </div>
-	</header>
-     <div class="main">
-      <div class="shop_top">
-		<div class="container">
-			<div class="row ex_box">
-				<br><br>
+
+  <!-- HEADER FIJO CON MENÚ -->
+ <header class="navbar">
+    <div class="logo"><img src="images/logo.png" alt="" width="100"/></div>
+    <button class="toggle" id="menu-toggle">&#9776;</button>
+
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Inicio</a></li>
+
+      <li class="has-submenu">
+        <a href="#">Ángeles</a>
+        <ul class="submenu">
+          <li><a href="angeles.html">Ángeles</a></li>
+          <li><a href="angeles videos.html">Videos</a></li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a href="#">Arcángeles</a>
+        <ul class="submenu">
+          <li><a href="arcangeles historias.html">historias</a></li>
+          <li><a href="arcangeles oraciones.html">Oraciones</a></li>
+        </ul>
+      </li>
+
+      <li><a href="rituales.html">Rituales</a></li>
+      <li><a href="sesiones.html">Sesiones</a></li>
+    </ul>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container">
+    <br><br><br><br>
 				<h3 align="center" class="m_2">Ángeles de la Naturaleza</h3>
-				<span class="img_section magnifier2"><a class="fancybox" href="images/angeles de la naturaleza.jpeg" data-fancybox-group="gallery" title="Ángeles de la Naturaleza"><img src="images/angeles de la naturaleza.jpeg" width="450" class="img-responsive" alt=""></a></span>
-				<div align="center" class="col-md-4 team1">
-				<div class="img_section magnifier2">
-				  <a class="fancybox" href="images/angeles de la naturaleza.jpeg" data-fancybox-group="gallery" title="Ángeles de la Naturaleza"><span> </span>
-					
-                    
-                   
-				</a></div>
-				</div>
-                
-                
-                
-                
-                
-				 <div class="row ex_box">
-				<div class="col-md-20 team1">
-				<div class="img_section magnifier2">
-                
-                <br><br><p>
+
+        
+       <!-- Cuadro 1 -->
+    <div class="grid-item">
+		<a class="fancybox" href="experiance abundancia.html" data-fancybox-group="gallery" title="Ángel de la Naturaleza">
+        <div class="contenedor-imagen">
+           
+      		  <img src="images/angeles de la naturaleza.jpeg"  alt="Imagen destacada">
+            
+          </div>
+			<div>
+                <p class="m_2">
+					Ángeles de la Naturaleza
+                </p>
+			</div>
+		</a>
+    </div>
+
+    <div>
+      <br><br><p>
                 
                <h3 align="center"> Ángeles de la naturaleza – Seres elementales</h3>
 El reino elemental de los humanos, hadas, elfos, gnomos y salamandras
@@ -218,115 +188,92 @@ Los espíritus del agua gobiernan sobre el agua y cuidan de las criaturas que ha
                 
                 
                  </p>
-
-
-                
-				 </div>
-				</div>
-		    </div>
-		    <div class="row ex1_box">
-			   <div align="center" class="col-md-4 team1">
-				<div class="img_section magnifier2">
-				  <a class="fancybox" href="images/angeles de la naturaleza1.jpg" data-fancybox-group="gallery" title="Ángeles de la Naturaleza"><img src="images/angeles de la naturaleza1.jpg" width="350" class="img-responsive" alt="200"><span> </span>
-					
-                 <div>
-                <p class="texto-negro">
-						Ángeles de la Naturaleza
-                 </p>
-				  </div> 
-				</a></div>
-				</div>
-				<div align="center" class="col-md-4 team1">
-				<div class="img_section magnifier2">
-				  <a class="fancybox" href="images/angeles de la naturaleza2.jpg" data-fancybox-group="gallery" title="Ángeles de la Naturaleza"><img src="images/angeles de la naturaleza2.jpg" width="300" class="img-responsive" alt=""><span> </span>
-					
-                   
-                    <div>
-                <p class="texto-negro">
-						Ángeles de la Naturaleza
-                 </p>
-				  </div> 
-				</a></div>
-				</div>
-				<div align="center" class="col-md-4 team1">
-				<div class="img_section magnifier2">
-				  <a class="fancybox" href="images/angeles de la naturaleza3.jpg" data-fancybox-group="gallery" title="Ángeles de la Naturaleza"><img src="images/angeles de la naturaleza3.jpg" width="400" class="img-responsive"  alt="100"><span> </span>
-					
-                       <div>
-                <p class="texto-negro">
-						Ángeles de la Naturaleza
-                 </p>
-				  </div> 
-				</a></div>
-			   </div>
-		    </div>
-		 </div>
-	   </div>
-	  </div>
-	  <div class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<ul class="footer_box">
-							<h4>Nosotros</h4>
-							<li><a href="#">Misión: acercarte a tus guias, que los conozcas y encuentres refugio en ellos</a></li>
-							<li><a href="#">Objetivos: que encuentres los medios para relajarte, realizar rituales</a></li>
-							<li><a href="#">Visión: orientado a que puedas conectar con tus guias de manera sencilla</a> </li>
-						</ul>
-					</div>
-					
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>Contacto</h4>
-							<li><a href="#">Correo: melekangel993@gmail.com</a></li>
-							<!--<li><a href="#">Teléfono</a></li>
-							<li><a href="#">Easy Returns</a></li>
-							<li><a href="#">Warranty</a></li>
-							<li><a href="#">Replacement Binding Parts</a></li>-->
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>Visita nuestras redes</h4>
-							<!--<div class="footer_search">
-				    		   <form>
-				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
-				    			<input type="submit" value="Go">
-				    		   </form>
-					        </div>-->
-							<ul class="social">	
-							  <li class="facebook">  <a href="https://www.facebook.com/profile.php?id=61578575152230"><img src="images/facebook-boton.png" alt="100" width="50"> <span> </span></a></li>
-							 
-							  <li class="instagram"><a href="https://www.instagram.com/melekl993/"><img src="images/logo-7105561_1280.png" alt="90" width="90"> <span> </span></a></li>	
-                               <li class="twitter"><a href="#"><span> </span></a></li>
-							  <li class="pinterest"><a href="#"><span> </span></a></li>	
-							  <li class="youtube"><a href="#"><span> </span></a></li>						  				
-						    </ul>
-
-		   				</ul>
-					</div>
-				</div>
-				<div class="row footer_bottom">
-				    <div class="copy">
-			           <p>© 2025 Template by <a href="http://w3layouts.com" target="_blank">Melek</a></p>
-		            </div>
-					  <dl id="sample" class="dropdown">
-				        <dt><a href="#"><span>Change Region</span></a></dt>
-				        <dd>
-				            <ul>
-				                <li><a href="#">Australia<img class="flag" src="images/as.png" alt="" /><span class="value">AS</span></a></li>
-				                <li><a href="#">Sri Lanka<img class="flag" src="images/srl.png" alt="" /><span class="value">SL</span></a></li>
-				                <li><a href="#">Newziland<img class="flag" src="images/nz.png" alt="" /><span class="value">NZ</span></a></li>
-				                <li><a href="#">Pakistan<img class="flag" src="images/pk.png" alt="" /><span class="value">Pk</span></a></li>
-				                <li><a href="#">United Kingdom<img class="flag" src="images/uk.png" alt="" /><span class="value">UK</span></a></li>
-				                <li><a href="#">United States<img class="flag" src="images/us.png" alt="" /><span class="value">US</span></a></li>
-				            </ul>
-				         </dd>
-	   				  </dl>
-   				</div>
+    </div>
+    <div class="grid-container">
+    <!-- Cuadro 1 -->
+    <div class="grid-item">
+		<a class="fancybox" href="experiance abundancia.html" data-fancybox-group="gallery" title="Ángel de la Naturaleza">
+          <div class="contenedor-imagen">
+      		  <img src="images/angeles de la naturaleza1.jpg"  alt="Imagen destacada">
+          </div>
+			<div>
+                <p class="m_2">
+					Ángeles de la Naturaleza
+                </p>
 			</div>
-		</div>
-</body>	
+		</a>
+    </div>
 
+    <!-- Cuadro 2 -->
+    <div class="grid-item">
+		<a class="fancybox" href="experiance amor.html" data-fancybox-group="gallery" title="Ángel de la Naturaleza">
+          <div class="contenedor-imagen">
+      		  <img src="images/angeles de la naturaleza2.jpg" alt="Imagen destacada">
+          </div>
+			<div>
+                <p class="m_2">
+					Ángeles de la Naturaleza
+                </p>
+			</div>
+		</a>
+    </div>
+
+    <!-- Cuadro 3 -->
+    <div class="grid-item">
+		<a class="fancybox" href="experiance agua.html" data-fancybox-group="gallery" title="Ángeles de la Naturaleza">
+          <div class="contenedor-imagen">
+      		  <img src="images/angeles de la naturaleza3.jpg" alt="Imagen destacada">
+          </div>
+			<div>
+                <p class="m_2">
+					Ángeles de la Naturaleza
+                </p>
+			</div>
+		</a>
+    </div>
+    </div>
+
+    <!-- Simula contenido largo 
+    <div style="height: 1000px;"></div>-->
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+ <footer class="footer">
+  <div class="grid-footer">
+    <div class="columna">
+      <ul>
+				<h4>Nosotros</h4>
+					<li>Misión: acercarte a tus guias, que los conozcas y encuentres refugio en ellos.</li>
+					<li>Objetivos: que encuentres los medios para relajarte, realizar rituales.</li>
+					<li>Visión: orientado a que puedas conectar con tus guias de manera sencilla. </li>
+			</ul>
+    </div>
+
+   
+
+    <div class="columna">
+      <h4>Contacto</h4>
+        Correo: melekangel993@gmail.com  
+    </div>
+
+    <div class="columna">
+      <p>&copy;2025 Template by <a href="https://melek993.github.io/angel/index.html" target="_blank">Melek</a></p>
+    </div>
+
+    <div class="columna">
+      <h4>Visita nuestras redes</h4>
+        <a href="https://www.facebook.com/profile.php?id=61578575152230"><img src="images/facebook-boton.png" alt="100" width="50"> <span> </span></a>
+        <a href="https://www.instagram.com/melekl993/"><img src="images/logo-7105561_1280.png" alt="90" width="90"> <span> </span></a>
+		</div>
+
+    
+    
+  </div>
+
+
+</footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
 
