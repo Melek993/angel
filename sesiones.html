@@ -83,6 +83,22 @@
       }
     }
   </style>
+ <style>
+   
+
+    .contenedor {
+      margin: 3vw; /* margen relativo al ancho de la ventana */
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    /* Margen adaptable adicional con media queries */
+    @media (max-width: 600px) {
+      .contenedor {
+        margin: 3vw;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -118,6 +134,7 @@
   <!-- CONTENIDO PRINCIPAL -->
   <main class="container">
     <br><br><br><br>
+	  <div class="contenedor">
 				<h3 align="center" class="m_2">Sesiones</h3>
 
         
@@ -227,6 +244,7 @@
 
     <!-- Simula contenido largo 
     <div style="height: 1000px;"></div>-->
+	 </div>
   </main>
 
   <!-- PIE DE PÁGINA -->
@@ -268,5 +286,6 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
